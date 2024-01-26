@@ -28,7 +28,7 @@ const ProfileEdit = () => {
     const { fname, lname, email, number, currentLocation, } = userShortDetail;
 
     try {
-      const response = await fetch(`http://localhost:8000/api/v1/user/updateUserData`, {
+      const response = await fetch(`${url}/api/v1/user/updateUserData`, {
         method: 'PATCH',
         headers: {
           'token': localStorage.getItem('token'),
