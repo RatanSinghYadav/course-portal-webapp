@@ -1,5 +1,5 @@
 module.exports = Object.freeze({
-    // url : "https://rheapi.azurewebsites.net" 
-    url: "http://localhost:8000" 
+    url : "https://courses-portal.onrender.com" 
+    // url: "http://localhost:8000" 
 
 });
