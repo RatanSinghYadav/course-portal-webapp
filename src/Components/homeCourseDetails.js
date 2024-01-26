@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { url } from './Utils/Constant';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import '../Components/Assets/Styles/courseDetails.css';
 import { BiChevronUp, BiChevronDown } from 'react-icons/bi';
 
@@ -34,6 +34,14 @@ function HomeCourseDetails() {
     useEffect(() => {
         showCourseDetail();
     }, []);
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (localStorage.getItem('token')) {
+            navigate('/courses');
+        }
+    }, [])
 
 
     return (

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Assets/Styles/courses.css';
 import { url } from './Utils/Constant';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Pagination } from 'react-bootstrap';
 import swal from 'sweetalert';
 
@@ -67,7 +67,14 @@ function Home() {
             button: "Ok",
         });
     }
+   
+    const navigate = useNavigate();
 
+    useEffect(() => {
+        if (localStorage.getItem('token')) {
+            navigate('/courses');
+        }
+    }, [])
 
     return (
         <>
