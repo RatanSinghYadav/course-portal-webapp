@@ -1,0 +1,137 @@
+.course-desktop-view{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 0px 2rem 10rem;
+}
+
+.course-desktop-view-home{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 7rem 2rem 7rem;
+}
+.allCourses-heading-desktop{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.allCourses-heading-desktop-home{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.search-box {
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search-input-box {
+    width: 16rem;
+    padding: 4px 0px 4px 10px;
+    border: 1px solid #008080;
+    border-radius: 5px;
+}
+
+.search-input-box:focus {
+    outline: 1px solid #008080;
+}
+
+.course-card-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .1);
+    margin-bottom: 10px;
+    padding: 20px !important;
+}
+
+.card-row-1,
+.card-row-2,
+.card-row-3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 1rem 5px 1rem;
+    font-weight: 500;
+}
+
+.viewDetails {
+    border: 1px solid #008080;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: #008080;
+    background-color: white;
+
+}
+
+.viewDetails:hover {
+    border: none;
+    color: white;
+    background-color: #008080;
+    padding: 5px 11px 5px 11px;
+}
+
+.enrollNow {
+    font-weight: 500;
+    color: white;
+    background-color: #008080;
+    border-radius: 5px;
+    padding: 5px 9px 5px 9px;
+    border: 1px solid #008080;
+}
+
+.disabledEnrollNow{
+    font-weight: 500;
+    color: white;
+    background-color: #BBB;
+    border-radius: 5px;
+    padding: 5px 9px 5px 9px;
+    border: 1px solid #BBB;
+}
+
+.active>.page-link{
+    background-color: #008080;
+    border: 1px solid #008080;
+    border-radius: 2px;
+}
+
+.coursePagination{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.page-link {
+   color: #008080;
+}
+
+.course-mobile-view{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .course-mobile-view{
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 0px 2rem 0rem;
+    }
+    .allCourses-heading-mobile{
+        text-align: center;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+    .course-desktop-view{
+        display: none;
+    }
+    .allCourses-heading-desktop-home{
+        display: none;
+    }
+    .course-desktop-view-home{
+        display: none;
+    }
+    .allCourses-heading-desktop{
+        display: none;
+    }
+  }

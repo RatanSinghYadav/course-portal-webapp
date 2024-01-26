@@ -1,0 +1,123 @@
+.course-details-col-1 {
+    border-bottom: 1px solid #adb5bd;
+}
+
+.course-details-row {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.course-details-box-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0px 2rem 0px;
+}
+
+.course-details-box-2-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.content-heading {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    vertical-align: bottom;
+    color: #484848;
+}
+
+.course-details-box-3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 30px 2rem 0px;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Desktop view */
+@media screen and (min-width: 769px) {
+    .course-details-container-mobile {
+        display: none;
+    }
+
+    .course-details-heading-desktop {
+        text-align: center;
+        margin-top: 8rem;
+    }
+    .course-details-heading-desktop-home {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .course-details-container-desktop {
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+        background-color: white;
+        border: 1px solid #95bcbc;
+        box-shadow: 0 8px 24px 2px rgba(0, 0, 0, .18);
+        border-radius: 8px;
+        padding: 20px 25px;
+        margin-left: 12.5rem;
+    }
+
+    .course-details-container-desktop-home {
+        height: auto;
+        background-color: white;
+        border: 1px solid #95bcbc;
+        box-shadow: 0 8px 24px 2px rgba(0, 0, 0, .18);
+        border-radius: 8px;
+        padding: 20px 25px;
+        width: 70%;
+        margin-top: 3rem;
+    }
+
+    .course-details-heading-mobile {
+        display: none;
+    }
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+
+    .course-details-heading-mobile {
+        text-align: center;
+        margin-top: 6rem;
+    }
+
+    .course-details-container-mobile {
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+        background-color: white;
+        border: 1px solid #95bcbc;
+        box-shadow: 0 8px 24px 2px rgba(0, 0, 0, .18);
+        border-radius: 8px;
+        padding: 20px 25px;
+    }
+
+    .course-details-container-desktop-home{
+        display: none;
+    }
+
+    .course-details-heading-desktop-home{
+        display: none;
+    }
+
+    .course-details-heading-desktop {
+        display: none;
+    }
+
+    .course-details-container-desktop {
+        display: none;
+    }
+}
